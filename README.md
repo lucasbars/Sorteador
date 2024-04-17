@@ -20,7 +20,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [JavaCript](https://jquery.com/)
+- [JavaScript](https://jquery.com/)
 - [Jquery](https://jquery.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Fontawesome](https://fontawesome.com/)
