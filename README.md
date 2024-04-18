@@ -33,6 +33,8 @@ Projeto desenvolvido apenas com Javascript/Jquery para sortear times com 4 jogad
 Inserindo os jogadores separados por vírgula(,) e com a possibilidade selecionar um capitão
 por time.
 
+Acesse o projeto pelo [link](https://lucasbars.github.io/Sorteador/) 💜
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
