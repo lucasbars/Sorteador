@@ -5,10 +5,11 @@
   --color-b: #004d74;
   --color-c: #006494;
   --color-d: #006da4;
+  --color-f: #395886;
 }
 
 body {
-  background-color: var(--color-a);
+  background-color: var(--color-primary);
 }
 
 .bg-team {
