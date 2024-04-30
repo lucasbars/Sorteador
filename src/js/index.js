@@ -4,7 +4,19 @@ function handleLoadingPlayer() {
   let listPlayer = $("#textplayer").val().toUpperCase();
   
   // console.log(listPlayer.toUpperCase());
-  const arrayPlayer = listPlayer.split(",");
+  const arrayPlayer = listPlayer
+    .split(/\s*,\s*|\s+/)
+    .map((entry) => {
+      // Remove números, pontos e o emoji 🆗
+      let firstName = entry.replace(/[\d.🆗]/g, "");
+      // Remove texto entre parênteses
+      firstName = firstName.replace(/\([^)]*\)/g, "");
+      // Remove espaços extras no início e no final
+      firstName = firstName.trim();
+      // Extrai apenas o primeiro nome
+      return firstName.split(" ")[0];
+    })
+    .filter((item) => item !== "");
   // lucas,nath,laisa,gil,didi,filipe,edu,fernadnda
   if (arrayPlayer.length > 4) {
     divcap.removeClass("d-none");
