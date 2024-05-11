@@ -44,9 +44,11 @@ function handleLoadingPlayer() {
     });
     dados += "</div>";
     dados += "<div class='text-center row rounded'>";
-    dados +=
-      "<button type='button' class='btn btn-danger col-12 btn-lg mt-3 form-group' onclick='getCaptionTeam()'>";
+    dados +="<button type='button' class='btn btn-danger col-12 btn-lg mt-3 form-group' onclick='getCaptionTeam()'>";
     dados += "Sortear Time";
+    dados += "</button>";
+    dados +="<button type='button' class='btn btn-danger col-12 btn-lg mt-3 form-group' onclick='handleBackBegin()'>";
+    dados += "Voltar";
     dados += "</button>";
     dados += "</div>";
   
@@ -230,6 +232,8 @@ function handleBackBegin() {
   $("#result").addClass("d-none");
   $("#result").empty();
   $("#txtlistateam").removeClass("d-none");
+  $("#selectionCap").addClass("d-none");
+  $("#selectionCap").empty();
 }
 
 function desmarcarCheckboxes() {
